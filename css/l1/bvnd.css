@@ -1,0 +1,545 @@
+html {
+  font-size: 62.5%;
+}
+@media print {
+  body {
+    display: none !important; /* Ẩn toàn bộ nội dung khi in */
+  }
+}
+/* Đảm bảo navbar chiếm toàn bộ chiều rộng */
+.navbar {
+  height: 5.1rem;
+  /* Biến đối tượng thành flex */
+  display: flex;
+  /* Đặt logo và menu ở hai bên */
+  justify-content: space-between;
+  /* Cân đối tượng theo chiều dọc */
+  align-items: center;
+  /* Thêm padding để đối tượng co vào trong */
+  padding: 0rem 5% 0rem;
+  /* Màu nền */
+  background-color: #06411f;
+  /* màu chữ */
+  color: white;
+}
+
+.nav-logo img {
+  height: 4rem;
+  pointer-events: none;
+}
+/* Kiểu cho các liên kết desktop (mặc định là hàng ngang) */
+.nav-links {
+  /* loại bỏ style mặc định của thẻ cha */
+  list-style: none;
+  display: flex;
+  /* gap: 2rem; */
+  margin: 0;
+  padding: 0rem 0rem;
+}
+
+.nav-links a {
+  font-size: 1.8rem;
+  color: white;
+  text-decoration: none;
+  /* Các thẻ a cách nhau 1+1=2rem */
+  padding: 0rem 1rem;
+}
+.nav-links a:hover {
+  /* kẻ chân */
+  text-decoration-line: underline;
+}
+/* Ẩn nút Hamburger mặc định trên desktop */
+.menu-toggle {
+  display: none;
+}
+.menu-toggle1 {
+  display: none;
+}
+/* Từ đoạn này là viết code bo */
+body {
+  background-color: rgb(234, 234, 188);
+  margin: 0;
+}
+header {
+  /* display: flex; */
+  /* height: 66rem; */
+  width: 100%;
+  position: fixed;
+  z-index: 1000;
+  margin-left: 0;
+  top: 0;
+}
+
+main {
+  margin: 5.1rem auto auto;
+  background-color: rgb(234, 234, 188);
+  /* max-width: 80%; */
+  font-size: 1.6rem;
+  font-family: Arial, Helvetica, sans-serif;
+  line-height: 2.2;
+}
+h1 {
+  font-size: 2.2rem;
+  text-transform: uppercase;
+  line-height: 1.5em;
+  text-align: center;
+}
+h2 {
+  /* uppercase: toàn bộ chữ hoa
+  capitalize: chữ cái đầu viết hoa
+  lowercase: toàn bộ chữ thường. */
+  /* text-align: center; */
+  font-size: 2rem;
+  line-height: 1.6em;
+}
+h3 {
+  font-size: 1.8rem;
+}
+h4 {
+  font-size: 1.6rem;
+}
+p {
+  font-family: Arial, Helvetica, sans-serif;
+  line-height: 1.6em;
+}
+/* Chọn chữ cái đầu tiên */
+p::first-letter {
+  /* định dạng chữ hoa hay thường */
+  text-transform: capitalize;
+  font-size: 2.2rem;
+  font-family: "Times New Roman", Times, serif;
+  /* font-weight: bold; */
+}
+li {
+  font-family: Arial, Helvetica, sans-serif;
+  line-height: 1.8em;
+}
+.footer-container {
+  /* clear: both; */
+  display: grid;
+  /* Chia footer thành 4 cột bằng nhau */
+  grid-template-columns: repeat(4, 1fr);
+  /* height: 30rem; */
+  /* Thêm khoảng cách giữa các cột */
+  /* gap: 0.5rem;  */
+  background-color: rgb(234, 234, 188);
+}
+.box {
+  /* Quan trọng: Biến item này thành một container grid */
+  display: grid;
+
+  /* Thiết lập layout nội bộ: 
+       - Một hàng tự động (auto) cho tiêu đề/header
+       - Một hàng linh hoạt (1fr) cho nội dung chính
+       - Một hàng tự động (auto) cho footer nhỏ bên trong
+    */
+  grid-template-rows: auto 1fr auto;
+
+  background-color: #06411f;
+  padding: 1.5rem;
+  padding-left: 1rem;
+  /* border-radius: 1rem; */
+  /* border: 0.1rem solid #ccc; */
+  box-sizing: border-box;
+  color: white;
+}
+
+/* Các phần tử bên trong .box */
+.box-header {
+  /* Chiếm hàng đầu tiên (auto) */
+  font-weight: bold;
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+
+.box-content {
+  /* Chiếm hàng giữa (1fr) và mở rộng hết không gian còn lại */
+  overflow-y: auto;
+  text-transform: none;
+}
+
+.box-footer-inner {
+  /* Chiếm hàng cuối cùng (auto) */
+  margin-top: 1rem;
+  font-size: 0.8rem;
+  color: gray;
+  /* Độ mờ của đối tượng */
+  opacity: 0;
+}
+.copy {
+  font-size: 1.5rem;
+  background-color: black;
+  text-align: center;
+  color: white;
+  pointer-events: none;
+  padding: 0.1rem 0;
+}
+.lienhe {
+  font-size: 1.6rem;
+}
+.lienhe a {
+  text-decoration: none;
+  font-size: 1.4rem;
+  color: white;
+  font-family: Arial, Helvetica, sans-serif;
+}
+.lienhe a:hover {
+  text-decoration: underline;
+}
+#morong {
+  text-transform: none;
+  font-size: 1.4rem;
+  font-family: Arial, Helvetica, sans-serif;
+}
+#morong a {
+  text-decoration: none;
+  color: white;
+  font-size: 1.4rem;
+  font-family: Arial, Helvetica, sans-serif;
+}
+#morong a:hover {
+  text-decoration: underline;
+  color: red;
+  font-size: 1.8rem;
+  font-weight: bold;
+}
+/* 
+
+code riêng từng trang 
+
+*/
+.lumifactory {
+  /* kích thước tối cho ảnh */
+  max-width: 200px;
+  /* kích thước ảnh khi co nhỏ màn hình */
+  width: 100%;
+  /* bo cong ảnh */
+  /* border-radius: 50%; */
+  /* đặt ảnh hiển thị bên trái văn bản */
+  float: right;
+  padding: 10px;
+  /* thuộc tính quản lý chuột */
+  /* pointer-events: none; */
+  border-radius: 1.3rem;
+  /* trục x, trục y, độ mờ, độ phủ, màu bóng */
+  box-shadow: 8px 8px 6px -2px rgb(1, 79, 26);
+}
+.lumifactory:hover {
+  transform: scale(1.05);
+  transition: 1s;
+}
+img {
+  max-width: 489px;
+  width: 100%;
+}
+.bglumi {
+  clear: both;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  row-gap: 10px;
+  column-gap: 3px;
+}
+main {
+  display: flex;
+}
+
+.sb {
+  padding-top: 0;
+  margin-top: 0;
+}
+.sidebar {
+  background-color: #06411f;
+  height: calc(100vh - 5.1vh);
+  width: 22rem;
+  top: 5.1rem;
+  display: flex;
+  flex-direction: column;
+  position: sticky;
+  overflow-y: auto;
+  /* gap: 5px; */
+  z-index: 1;
+  color: white;
+}
+.sidebar li {
+  padding-top: 1rem;
+  border-bottom: 0.01rem solid gray;
+}
+.sidebar a:hover {
+  text-decoration: underline;
+}
+.sidebar h2 {
+  margin-bottom: 0;
+}
+.sb {
+  padding-left: 3rem;
+  margin-bottom: 0;
+}
+.detail {
+  background-color: rgb(234, 234, 188);
+  width: calc(100% - 23rem);
+  padding-left: 1rem;
+}
+.bvm {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 1.5rem;
+}
+.bvmbox {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 21rem;
+  height: 21rem;
+  border-radius: 1rem;
+  box-shadow: 0.4rem 0.8rem 1rem #555;
+}
+.bvmheder {
+  display: flex;
+  background-color: rgb(6, 71, 17);
+  border-top-left-radius: 1rem;
+  border-top-right-radius: 1rem;
+  height: 4rem;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  font-size: 1.8rem;
+}
+.bvmheder:hover {
+  text-decoration: underline;
+}
+.bvmcontent {
+  padding-top: 1rem;
+  text-align: center;
+}
+.bvmcontent img {
+  width: 20rem;
+  margin: 0;
+}
+.bvmfooter {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 40px;
+  /* background-color: aqua; */
+  border-bottom-left-radius: 1rem;
+  border-bottom-right-radius: 1rem;
+}
+a {
+  text-decoration: none;
+  color: unset;
+}
+
+.amh {
+  display: block;
+  max-width: 800px;
+  width: 100%;
+  margin: 0 auto;
+}
+.kyten {
+  text-align: right;
+  font-style: italic;
+}
+.anhhd {
+  max-width: 100%;
+}
+.daumuc li::marker {
+  font-size: 2rem;
+  font-weight: bold;
+}
+
+.video-container {
+  position: relative;
+  padding-bottom: 56.25%; /* Tỷ lệ 16:9 */
+  height: 0;
+  overflow: hidden;
+}
+
+.video-container iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border: 0;
+}
+
+/* Khi màn hình nhỏ hơn hoặc bằng 768px (Mobile View) */
+@media (max-width: 768px) {
+  .detail {
+    width: 90%;
+  }
+  main {
+    display: block;
+  }
+  /* 1. Thay đổi cách hiển thị các liên kết */
+  .nav-links {
+    /* Chuyển từ flex (hàng ngang) sang block (hàng dọc) */
+    flex-direction: column;
+    width: 20rem;
+
+    /* Đặt vị trí tuyệt đối, ẩn nó đi, và chuẩn bị cho hiệu ứng trượt */
+    position: absolute;
+    top: 5rem; /* Dưới navbar chính */
+    right: 0;
+    background-color: #052612; /* Màu nền cho menu mở ra */
+    /* padding: 1rem 0; */
+
+    /* Ẩn menu bằng CSS */ /* Hoặc sử dụng transform/visibility để có hiệu ứng */
+    /* Thay vì display: none */
+    opacity: 0;
+    visibility: hidden;
+    transform: translateY(-2rem); /* Đẩy menu lên trên 2rem */
+    transition: all 1s ease; /* Thời gian chuyển động 1 giây */
+
+    /* Thêm các style khác cho menu của bạn ở đây */
+  }
+
+  .nav-links li {
+    justify-items: center;
+    text-align: center;
+    padding: 1rem 0;
+    border-top: 0.01rem solid #555;
+    border-bottom: 0.01rem solid #555;
+  }
+
+  /* 2. Hiển thị nút Hamburger */
+  .menu-toggle {
+    display: block; /* Hiện nút trên mobile */
+    background: none;
+    border: none;
+    color: white;
+    font-size: 2rem;
+    cursor: pointer;
+  }
+  /* 3. Hiển thị menu khi nó có class 'active' (hoặc dùng thuộc tính data-visible) */
+  .nav-links[data-visible="true"] {
+    opacity: 1;
+    visibility: visible;
+    /* Trở về vị trí cũ */
+    transform: translateY(0);
+  }
+  .footer-container {
+    /* clear: both; */
+    display: flex;
+    flex-direction: column;
+    /* Chia footer thành 4 cột bằng nhau */
+    /* grid-template-columns: repeat(4, 1fr); */
+    /* height: 30rem; */
+    /* Thêm khoảng cách giữa các cột */
+    /* gap: 0.5rem;  */
+    background-color: rgb(234, 234, 188);
+  }
+  .box {
+    /* Quan trọng: Biến item này thành một container grid */
+    display: grid;
+
+    /* Thiết lập layout nội bộ: 
+       - Một hàng tự động (auto) cho tiêu đề/header
+       - Một hàng linh hoạt (1fr) cho nội dung chính
+       - Một hàng tự động (auto) cho footer nhỏ bên trong
+    */
+    grid-template-rows: auto 1fr auto;
+
+    background-color: rgb(6, 71, 17);
+    padding: 1.5rem;
+    padding-left: 1rem;
+    /* border-radius: 1rem; */
+    /* border: 0.1rem solid #ccc; */
+    box-sizing: border-box;
+    color: white;
+  }
+
+  /* Các phần tử bên trong .box */
+  .box-header {
+    /* Chiếm hàng đầu tiên (auto) */
+    font-weight: bold;
+    font-size: 2rem;
+    margin-bottom: 1rem;
+  }
+
+  .box-content {
+    /* Chiếm hàng giữa (1fr) và mở rộng hết không gian còn lại */
+    overflow-y: auto;
+    text-transform: none;
+  }
+
+  .box-footer-inner {
+    /* Chiếm hàng cuối cùng (auto) */
+    margin-top: 1rem;
+    font-size: 0.8em;
+    color: gray;
+    /* Độ mờ của đối tượng */
+    opacity: 0;
+  }
+  .copy {
+    font-size: 1.5rem;
+    background-color: black;
+    text-align: center;
+    color: white;
+    pointer-events: none;
+  }
+  .sidebar {
+    list-style: none;
+    z-index: 1000;
+    /* Chuyển từ flex (hàng ngang) sang block (hàng dọc) */
+    flex-direction: column;
+    width: 20rem;
+
+    /* Đặt vị trí tuyệt đối, ẩn nó đi, và chuẩn bị cho hiệu ứng trượt */
+    position: fixed;
+    /* Dưới navbar chính */
+    top: 5.1rem;
+    /* left: 1rem; */
+    height: 30rem;
+    overflow-y: auto;
+    background-color: #052612; /* Màu nền cho menu mở ra */
+
+    /* Ẩn menu bằng CSS */ /* Hoặc sử dụng transform/visibility để có hiệu ứng */
+    /* Thay vì display: none */
+    opacity: 0;
+    visibility: hidden;
+    transform: translateY(2rem); /* Đẩy menu lên trên 2rem */
+    transition: all 1s ease; /* Thời gian chuyển động 0.4 giây */
+
+    display: flex; /* Giữ flex để layout bên trong vẫn đúng */
+    flex-direction: column;
+    /* Thêm các style khác cho menu của bạn ở đây */
+  }
+
+  .sidebar li {
+    justify-items: center;
+    text-align: left;
+    padding: 1rem 0;
+    border-top: 0.01rem solid #555;
+    border-bottom: 0.01rem solid #555;
+  }
+
+  /* 2. Hiển thị nút Hamburger */
+  .menu-toggle1 {
+    /* Hiện nút trên mobile */
+    display: block;
+    background-color: #052612;
+    border: none;
+    color: white;
+    font-size: 1.8rem;
+    cursor: pointer;
+    position: fixed;
+    top: 6rem;
+    left: 1rem;
+  }
+  /* 3. Hiển thị menu khi nó có class 'active' (hoặc dùng thuộc tính data-visible) */
+  .sidebar[data-visible1="true"] {
+    opacity: 1;
+    visibility: visible;
+    transform: translateY(0); /* Trở về vị trí cũ */
+  }
+  main {
+    margin: 10.2rem auto auto;
+  }
+  ol.noidung {
+    margin: 0;
+    padding: 0;
+  }
+}

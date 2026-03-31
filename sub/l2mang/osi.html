@@ -1,0 +1,418 @@
+<!doctype html>
+<html lang="vi">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="apple-touch-icon"
+      sizes="57x57"
+      href="../../ico/apple-icon-57x57.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="60x60"
+      href="../../ico/apple-icon-60x60.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="72x72"
+      href="../../ico/apple-icon-72x72.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="76x76"
+      href="../../ico/apple-icon-76x76.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="114x114"
+      href="../../ico/apple-icon-114x114.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="120x120"
+      href="../../ico/apple-icon-120x120.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="144x144"
+      href="../../ico/apple-icon-144x144.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="152x152"
+      href="../../ico/apple-icon-152x152.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="../../ico/apple-icon-180x180.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="192x192"
+      href="../../ico/android-icon-192x192.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="../../ico/favicon-32x32.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="96x96"
+      href="../../ico/favicon-96x96.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="../../ico/favicon-16x16.png"
+    />
+    <link rel="manifest" href="/manifest.json" />
+    <meta name="msapplication-TileColor" content="#ffffff" />
+    <meta name="msapplication-TileImage" content="/ms-icon-144x144.png" />
+    <meta name="theme-color" content="#ffffff" />
+    <link rel="stylesheet" href="../../css/l1/bvnd.css" />
+    <title>VTS-DHD</title>
+  </head>
+  <body>
+    <header>
+      <nav class="navbar">
+        <a href="../../index.html" class="nav-logo"
+          ><img src="../../img/l1/logo.png" alt=""
+        /></a>
+        <button
+          class="menu-toggle"
+          aria-expanded="false"
+          aria-controls="nav-links"
+        >
+          &#9776;
+        </button>
+        <ul class="nav-links" id="nav-links" data-visible="false">
+          <li><a href="../../index.html">Bài viết</a></li>
+          <li><a href="../../lien-he.html">Liên hệ</a></li>
+        </ul>
+      </nav>
+    </header>
+    <main>
+      <button
+        class="menu-toggle1"
+        class="sib"
+        aria-expanded="false"
+        aria-controls="nav-links"
+      >
+        &#9776;
+      </button>
+      <div class="sidebar" id="nav-links1" data-visible1="false">
+        <a href="../l1/bvmang.html"><h2 style="text-align: center">LAN</h2></a>
+        <ul class="sb" id="sidebar" data-visible="mo">
+          <li><a href="./osi.html">Mô hình OSI</a></li>
+          <li><a href="./layer1.html">Layer 1</a></li>
+          <li><a href="./layer2.html">Layer 2</a></li>
+          <li><a href="./layer3.html">Layer 3</a></li>
+          <li><a href="./cable.html">Cáp đồng</a></li>
+          <li><a href="./opfb.html">Cáp quang</a></li>
+          <li><a href="./sw.html">Switch</a></li>
+          <li><a href="./ap.html">Access point</a></li>
+          <li><a href="./router.html">Router</a></li>
+          <li><a href="./loilan.html">Lỗi LAN</a></li>
+          <li><a href="./loiquang.html">Lỗi quang</a></li>
+          <li><a href=""></a></li>
+          <li><a href=""></a></li>
+          <li><a href=""></a></li>
+          <li><a href=""></a></li>
+          <li><a href=""></a></li>
+          <li><a href=""></a></li>
+          <li><a href=""></a></li>
+        </ul>
+      </div>
+      <article class="detail">
+        <hr />
+        <h2>OSI Reference Model</h2>
+        <span>(Nguồn: Internet)</span>
+        <hr />
+        <h3>Mô hình OSI là gì?</h3>
+        <p>
+          Mô hình Kết nối các hệ thống mở (OSI) là một khung khái niệm chia các
+          chức năng truyền thông mạng thành 7 lớp. Việc gửi dữ liệu qua mạng rất
+          phức tạp vì các công nghệ phần cứng và phần mềm khác nhau phải hoạt
+          động một cách hài hòa qua các ranh giới địa lý và chính trị. Mô hình
+          dữ liệu OSI cung cấp một ngôn ngữ phổ quát cho mạng máy tính, vì vậy
+          các công nghệ đa dạng có thể giao tiếp bằng cách sử dụng các giao thức
+          tiêu chuẩn hoặc quy tắc truyền thông. Mỗi công nghệ trong một lớp cụ
+          thể phải cung cấp các khả năng nhất định và thực hiện các chức năng cụ
+          thể để trở nên hữu ích trong mạng. Các công nghệ ở những lớp cao hơn
+          hưởng lợi từ việc rút gọn này vì chúng có thể sử dụng các công nghệ
+          cấp thấp hơn mà không phải lo lắng về các chi tiết triển khai cơ bản.
+        </p>
+        <h3>Tại sao mô hình OSI lại quan trọng?</h3>
+        <p>
+          Các lớp của mô hình Kết nối các hệ thống mở (OSI) tóm lược mọi loại
+          hình giao tiếp mạng trên cả thành phần phần mềm và phần cứng. Mô hình
+          này được thiết kế để cho phép hai hệ thống độc lập giao tiếp với nhau
+          thông qua các giao diện hoặc giao thức được chuẩn hóa dựa trên lớp
+          hoạt động hiện tại. <br />Tiếp theo là những lợi ích của mô hình OSI.
+        </p>
+        <h4>Hiểu biết chung về những hệ thống phức tạp</h4>
+        <p>
+          Các kỹ sư có thể sử dụng mô hình OSI để tổ chức và mô hình hóa các
+          kiến trúc hệ thống kết nối mạng phức tạp. Họ có thể tách lớp hoạt động
+          của từng thành phần hệ thống dựa theo chức năng chính của thành phần
+          đó. Khả năng phân tách một hệ thống thành các phần nhỏ dễ quản lý
+          thông qua việc trừu tượng hóa giúp mọi người dễ dàng khái niệm hóa hệ
+          thống này một cách tổng thể.
+        </p>
+        <h4>Nghiên cứu và phát triển nhanh hơn</h4>
+        <p>
+          Với mô hình tham chiếu OSI, các kỹ sư có thể hiểu rõ hơn về công việc
+          của mình. Khi tạo ra các hệ thống kết nối mạng mới cần giao tiếp với
+          nhau, họ biết mình đang phát triển lớp (hoặc các lớp) công nghệ nào.
+          Các kỹ sư có thể phát triển các hệ thống kết nối mạng và tận dụng một
+          loạt các quy trình và giao thức có thể lặp lại.
+        </p>
+        <h4>Chuẩn hóa linh hoạt</h4>
+        <p>
+          Thay vì chỉ định các giao thức để sử dụng giữa các cấp, mô hình OSI
+          chỉ định các tác vụ mà các giao thức thực hiện. Mô hình này chuẩn hóa
+          quá trình phát triển giao tiếp mạng để mọi người có thể nhanh chóng
+          nắm bắt, xây dựng và phân tách các hệ thống có tính phức tạp cao mà
+          không cần phải biết trước về hệ thống. Mô hình này cũng tóm tắt các
+          chi tiết nên các kỹ sư không cần phải hiểu biết về mọi khía cạnh của
+          mô hình. Trong các ứng dụng hiện đại, các cấp độ kết nối mạng và giao
+          thức thấp hơn đều được tóm tắt để đơn giản hóa việc thiết kế và phát
+          triển hệ thống. Hình ảnh sau đây cho thấy cách mô hình OSI được sử
+          dụng trong lĩnh vực phát triển ứng dụng hiện đại.
+        </p>
+        <img class="amh" src="../../img/l2mang/OSI.jpg" alt="OSI Model" />
+        <h3>Bảy lớp của mô hình OSI là gì?</h3>
+        <p>
+          Mô hình Kết nối giữa các hệ thống mở (Open Systems Interconnection
+          &#45; OSI) được phát triển bởi Tổ chức tiêu chuẩn hóa quốc tế và các
+          tổ chức khác vào cuối những năm 1970. Mô hình này được ra mắt dưới
+          dạng đầu tiên vào năm 1984 với tên ISO 7498, và phiên bản hiện tại là
+          ISO/IEC 7498-1:1994. Dưới đây là 7 lớp của mô hình.
+        </p>
+        <!-- (h4+p)*7 -->
+        <h4>Lớp vật lý</h4>
+        <p>
+          Lớp vật lý là phương tiện truyền dẫn vật lý và các công nghệ để truyền
+          dữ liệu qua phương tiện đó. Về cốt lõi, hoạt động truyền dữ liệu là
+          việc truyền tín hiệu kỹ thuật số và điện tử thông qua các kênh vật lý
+          khác nhau như cáp quang, cáp đồng và không khí. Lớp vật lý bao gồm
+          tiêu chuẩn cho các công nghệ và chỉ số liên quan chặt chẽ với các
+          kênh, chẳng hạn như Bluetooth, NFC và tốc độ truyền dữ liệu.
+        </p>
+        <h4>Lớp liên kết dữ liệu</h4>
+        <p>
+          Lớp liên kết dữ liệu là các công nghệ được sử dụng để kết nối hai máy
+          trên một mạng nơi lớp vật lý đã tồn tại. Lớp này quản lý khung dữ liệu
+          &#45; là các tín hiệu kỹ thuật số được gói gọn trong các gói dữ liệu.
+          Kiểm soát lưu lượng và kiểm soát lỗi dữ liệu thường là trọng tâm chính
+          của lớp liên kết dữ liệu. Ethernet là ví dụ về một tiêu chuẩn ở cấp độ
+          này. Lớp liên kết dữ liệu thường được chia thành hai lớp phụ: lớp Kiểm
+          soát truy cập phương tiện (Media Access Control &#45; MAC) và lớp Điều
+          khiển liên kết logic (Logical Link Control &#45; LLC).
+        </p>
+        <h4>Lớp mạng</h4>
+        <p>
+          Lớp mạng liên quan đến các khái niệm như định tuyến, chuyển tiếp và
+          xác định địa chỉ trên một mạng phân tán hoặc nhiều mạng được kết nối
+          của các nút hoặc máy. Lớp mạng cũng có thể quản lý kiểm soát lưu
+          lượng. Trên Internet, Giao thức Internet v4 (IPv4) và IPv6 được sử
+          dụng làm giao thức lớp mạng chính.
+        </p>
+        <h4>Lớp truyền tải</h4>
+        <p>
+          Trọng tâm chính của lớp truyền tải là đảm bảo rằng các gói dữ liệu đến
+          đúng thứ tự, không bị mất mát/bị lỗi hoặc có thể được phục hồi liền
+          mạch nếu được yêu cầu. Kiểm soát lưu lượng cùng với kiểm soát lỗi
+          thường là trọng tâm tại lớp truyền tải. Ở lớp này, các giao thức
+          thường được sử dụng bao gồm Giao thức điều khiển truyền tải
+          (Transmission Control Protocol &#45; TCP), một giao thức dựa trên kết
+          nối gần như không suy hao và Giao thức gói dữ liệu người dùng (User
+          Datagram Protocol &#45; UDP), một giao thức không kết nối có suy hao.
+          TCP thường được sử dụng khi tất cả dữ liệu phải còn nguyên vẹn (ví dụ:
+          chia sẻ tệp), trong khi UDP được sử dụng khi việc giữ lại tất cả các
+          gói ít quan trọng hơn (ví dụ: truyền phát video).
+        </p>
+        <h4>Lớp phiên</h4>
+        <p>
+          Lớp phiên chịu trách nhiệm điều phối mạng giữa hai ứng dụng riêng biệt
+          trong một phiên. Một phiên quản lý một kết nối ứng dụng một-một từ khi
+          bắt đầu đến lúc kết thúc và xung đột đồng bộ hóa. Hệ thống tệp mạng
+          (NFS) và Khối tin nhắn máy chủ (SMB) là các giao thức thường được sử
+          dụng ở lớp phiên.
+        </p>
+        <h4>Lớp trình bày</h4>
+        <p>
+          Lớp trình bày chủ yếu liên quan đến cú pháp của chính dữ liệu để các
+          ứng dụng gửi và sử dụng. Ví dụ: Ngôn ngữ đánh dấu siêu văn bản (HTML),
+          Ký hiệu đối tượng JavaSCIPT (JSON) và Giá trị phân tách bằng dấu phẩy
+          (CSV) đều là các ngôn ngữ mô hình hóa để mô tả cấu trúc của dữ liệu ở
+          lớp trình bày.
+        </p>
+        <h4>Lớp ứng dụng</h4>
+        <p>
+          Lớp ứng dụng liên quan đến loại ứng dụng cụ thể và các phương thức
+          giao tiếp được tiêu chuẩn hóa của nó. Ví dụ, các trình duyệt có thể
+          giao tiếp bằng cách sử dụng Giao thức truyền siêu văn bản an toàn
+          (HyperText Transfer Protocol Secure &#45; HTTPS), HTTP và ứng dụng
+          email có thể giao tiếp bằng POP3 (Post Office Protocol phiên bản 3) và
+          SMTP (Simple Mail Transfer Protocol &#45; Giao thức truyền thư đơn
+          giản).
+        </p>
+        <h3>
+          Làm thế nào để hoạt động truyền dữ liệu xảy ra trong mô hình OSI?
+        </h3>
+        <p>
+          Các lớp trong mô hình Kết nối giữa các hệ thống mở (Open Systems
+          Interconnection &#45; OSI) được thiết kế để một ứng dụng có thể giao
+          tiếp qua mạng với một ứng dụng khác trên một thiết bị khác, bất kể sự
+          phức tạp của ứng dụng và các hệ thống cơ bản. Để làm điều này, các
+          tiêu chuẩn và giao thức khác nhau được sử dụng để giao tiếp với lớp
+          bên trên hoặc bên dưới. Đây là các lớp độc lập và chỉ nhận thức được
+          các giao diện để giao tiếp với lớp bên trên và bên dưới nó. <br />
+          Bằng cách liên kết tất cả các lớp và giao thức này lại với nhau, thông
+          tin liên lạc dữ liệu phức tạp có thể được gửi từ ứng dụng cấp cao này
+          sang ứng dụng cấp cao khác. Quy trình hoạt động như sau:
+        </p>
+        <ol>
+          <li>
+            Lớp ứng dụng của người gửi hoạt động truyền dữ liệu xuống tầng bên
+            dưới tiếp theo.
+          </li>
+          <li>
+            Mỗi lớp đều thêm các tiêu đề và địa chỉ riêng của nó vào dữ liệu
+            trước khi chuyển dữ liệu đi.
+          </li>
+          <li>
+            Hoạt động truyền dữ liệu di chuyển xuống các lớp cho đến khi cuối
+            cùng dữ liệu được truyền qua phương tiện vật lý.
+          </li>
+          <li>
+            Ở đầu kia của phương tiện, mỗi lớp xử lý dữ liệu theo các tiêu đề có
+            liên quan ở cấp độ đó.
+          </li>
+          <li>
+            Ở đầu thiết bị nhận, dữ liệu di chuyển lên từng lớp và dần dần được
+            giải nén cho đến khi ứng dụng ở đầu kia nhận được dữ liệu.
+          </li>
+        </ol>
+        <h3>Các lựa chọn thay thế cho mô hình OSI là gì?</h3>
+        <p>
+          Các mô hình mạng khác nhau đã được sử dụng trong quá khứ, chẳng hạn
+          như Tra đổi gói trình tự/Trao đổi gói Internet (Sequenced Packet
+          Exchange/Internet Packet Exchange &#45; SPX/IPX) và Hệ thống đầu ra
+          đầu vào cơ bản của mạng (Network Basic Input Output System &#45;
+          NetBIOS). Ngày nay, giải pháp thay thế chính cho mô hình Kết nối giữa
+          các hệ thống mở (Open Systems Interconnection &#45; OSI) là mô hình
+          TCP/IP.
+        </p>
+        <h4>Mô hình TCP/IP</h4>
+        <p>Mô hình TCP/IP bao gồm năm lớp khác nhau:</p>
+        <ul>
+          <li>Lớp vật lý</li>
+          <li>Lớp liên kết dữ liệu</li>
+          <li>Lớp mạng</li>
+          <li>Lớp truyền tải</li>
+          <li>Lớp ứng dụng</li>
+        </ul>
+        <p>
+          Mặc dù các lớp như lớp vật lý, lớp mạng và lớp ứng dụng có vẻ như ánh
+          xạ trực tiếp đến mô hình OSI, điều này không hoàn toàn đúng. Thay vào
+          đó, mô hình TCP/IP ánh xạ chính xác nhất đến cấu trúc và giao thức của
+          Internet. <br />
+          Mô hình OSI vẫn là một mô hình mạng phổ biến để mô tả cách mạng vận
+          hành, từ góc độ toàn diện cho mục đích giáo dục. Tuy nhiên, mô hình
+          TCP/IP hiện nay được sử dụng phổ biến hơn trong thực tế.
+        </p>
+        <h4>Một lưu ý về các giao thức và mô hình độc quyền</h4>
+
+        <p>
+          Điều quan trọng cần lưu ý là không phải tất cả các hệ thống và ứng
+          dụng hoạt động trên Internet đều tuân theo mô hình TCP/IP hoặc mô hình
+          OSI. Tương tự như vậy, không phải tất cả các hệ thống và ứng dụng mạng
+          ngoại tuyến đều sử dụng mô hình OSI hoặc bất kỳ mô hình nào khác.
+        </p>
+
+        <p>
+          Cả hai mô hình OSI và TCP/IP đều là các tiêu chuẩn mở. Chúng được
+          thiết kế để bất cứ ai cũng có thể sử dụng hoặc tiếp tục xây dựng để
+          đáp ứng các yêu cầu cụ thể.
+        </p>
+        <p>
+          Các tổ chức cũng thiết kế các tiêu chuẩn nội bộ, độc quyền của riêng
+          họ, gồm cả giao thức và mô hình.Các tiêu chuẩn đó thuộc dạng nguồn
+          đóng và chỉ để sử dụng trong hệ thống của họ. Đôi khi, sau đó họ có
+          thể phát hành chúng cho công chúng để tương tác và phát triển cộng
+          đồng hơn nữa. Một ví dụ là s2n-tls, một giao thức TLS ban đầu là giao
+          thức Amazon Web Services (AWS) độc quyền nhưng bây giờ là mã nguồn mở.
+        </p>
+      </article>
+      <br />
+      <hr />
+    </main>
+    <footer>
+      <div class="footer-container">
+        <div class="box box1">
+          <div class="box-header">VTS</div>
+          <div class="box-content">
+            <div class="lienhe">
+              <a href="../../index.html">Bài viết</a>
+            </div>
+            <div class="lienhe">
+              <a href="../../lien-he.html">Liên hệ</a>
+            </div>
+          </div>
+          <div class="box-footer-inner">Chân cột nhỏ.</div>
+        </div>
+        <div class="box box2">
+          <div class="box-header">Liên hệ</div>
+          <div class="box-content">
+            <address class="lienhe">✉ Email: dhdang.nb@gmail.com</address>
+            <address class="lienhe">
+              <a href="tel:0961314699">☏ Điện thoại: 0961314699</a>
+            </address>
+            <address class="lienhe">
+              <a target="_blank" href="https://zalo.me/0961314699"
+                >Zalo: 0961314699</a
+              >
+            </address>
+          </div>
+          <div class="box-footer-inner">Chân cột nhỏ.</div>
+        </div>
+        <div class="box box3">
+          <div class="box-header">Videos</div>
+          <div class="box-content">
+            <div class="lienhe">
+              <a
+                target="_blank"
+                href="https://www.youtube.com/@H%E1%BA%A3i%C4%90%C4%83ng%C4%90%E1%BB%97-l2w"
+                >Youtube.com</a
+              >
+            </div>
+          </div>
+          <div class="box-footer-inner">Chân cột nhỏ.</div>
+        </div>
+        <div class="box box4">
+          <div class="box-header">Mở rộng</div>
+          <div class="box-content">
+            <span id="morong"
+              >Nếu bạn có nhu cầu lắp đặt internet tốc độ cao, hãy tham khảo nhà
+              mạng <a href="../../viettel.html">Viettel</a> bạn nhé!</span
+            >
+          </div>
+          <div class="box-footer-inner">Chân cột nhỏ.</div>
+        </div>
+      </div>
+      <div class="copy">
+        <small>Copyright ©2025 by dhdang.nb@gmail.com 096-1314-699</small>
+      </div>
+    </footer>
+    <script src="../../main.js"></script>
+  </body>
+</html>

@@ -1,0 +1,501 @@
+<!doctype html>
+<html lang="vi">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="apple-touch-icon"
+      sizes="57x57"
+      href="../../ico/apple-icon-57x57.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="60x60"
+      href="../../ico/apple-icon-60x60.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="72x72"
+      href="../../ico/apple-icon-72x72.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="76x76"
+      href="../../ico/apple-icon-76x76.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="114x114"
+      href="../../ico/apple-icon-114x114.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="120x120"
+      href="../../ico/apple-icon-120x120.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="144x144"
+      href="../../ico/apple-icon-144x144.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="152x152"
+      href="../../ico/apple-icon-152x152.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="../../ico/apple-icon-180x180.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="192x192"
+      href="../../ico/android-icon-192x192.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="../../ico/favicon-32x32.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="96x96"
+      href="../../ico/favicon-96x96.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="../../ico/favicon-16x16.png"
+    />
+    <link rel="manifest" href="/manifest.json" />
+    <meta name="msapplication-TileColor" content="#ffffff" />
+    <meta name="msapplication-TileImage" content="/ms-icon-144x144.png" />
+    <meta name="theme-color" content="#ffffff" />
+    <link rel="stylesheet" href="../../css/l1/bvnd.css" />
+    <title>VTS-DHD</title>
+  </head>
+  <body>
+    <header>
+      <nav class="navbar">
+        <a href="../../index.html" class="nav-logo"
+          ><img src="../../img/l1/logo.png" alt=""
+        /></a>
+        <button
+          class="menu-toggle"
+          aria-expanded="false"
+          aria-controls="nav-links"
+        >
+          &#9776;
+        </button>
+        <ul class="nav-links" id="nav-links" data-visible="false">
+          <li><a href="../../index.html">Bài viết</a></li>
+          <li><a href="../../lien-he.html">Liên hệ</a></li>
+        </ul>
+      </nav>
+    </header>
+    <main>
+      <button
+        class="menu-toggle1"
+        class="sib"
+        aria-expanded="false"
+        aria-controls="nav-links"
+      >
+        &#9776;
+      </button>
+      <div class="sidebar" id="nav-links1" data-visible1="false">
+        <a href="../l1/bvmang.html"><h2 style="text-align: center">LAN</h2></a>
+        <ul class="sb" id="sidebar" data-visible="mo">
+          <li><a href="./osi.html">Mô hình OSI</a></li>
+          <li><a href="./layer1.html">Layer 1</a></li>
+          <li><a href="./layer2.html">Layer 2</a></li>
+          <li><a href="./layer3.html">Layer 3</a></li>
+          <li><a href="./cable.html">Cáp đồng</a></li>
+          <li><a href="./opfb.html">Cáp quang</a></li>
+          <li><a href="./sw.html">Switch</a></li>
+          <li><a href="./ap.html">Access point</a></li>
+          <li><a href="./router.html">Router</a></li>
+          <li><a href="./loilan.html">Lỗi LAN</a></li>
+          <li><a href="./loiquang.html">Lỗi quang</a></li>
+          <li><a href=""></a></li>
+          <li><a href=""></a></li>
+          <li><a href=""></a></li>
+          <li><a href=""></a></li>
+          <li><a href=""></a></li>
+          <li><a href=""></a></li>
+          <li><a href=""></a></li>
+        </ul>
+      </div>
+      <div class="detail">
+        <hr />
+        <h2>Layer 2 - Data link layer</h2>
+        <span>(Nguồn: Internet)</span>
+        <hr />
+        <h3>Định nghĩa và các khái niệm cốt lõi</h3>
+        <p>
+          Lớp liên kết dữ liệu (Data Link Layer - DLA) là lớp thứ hai của mô
+          hình OSI. Nó chịu trách nhiệm truyền các khung dữ liệu giữa các nút
+          mạng được kết nối trực tiếp qua một liên kết vật lý. Lớp này xử lý
+          điều khiển liên kết logic (LLC) và điều khiển truy cập phương tiện
+          (MAC), đảm bảo truyền dữ liệu không lỗi đến bước tiếp theo và quản lý
+          quyền truy cập vào phương tiện vật lý được chia sẻ.
+        </p>
+        <p>
+          Mô hình OSI đóng vai trò là khung khái niệm bảy lớp để hiểu về truyền
+          thông mạng. Mỗi lớp có trách nhiệm cụ thể, và Lớp Liên kết Dữ liệu tập
+          trung hoàn toàn vào truyền thông giữa các thiết bị có kết nối trực
+          tiếp với nhau.
+        </p>
+        <p>
+          Lớp Liên kết Dữ liệu (Data Link Layer) hoạt động chặt chẽ với các lớp
+          lân cận. Nó dựa vào Lớp Vật lý (Lớp 1) bên dưới để xử lý việc truyền
+          tải thực tế các tín hiệu điện, xung ánh sáng hoặc sóng radio. Phía
+          trên nó, Lớp Mạng (Lớp 3) xử lý việc định tuyến giữa các mạng khác
+          nhau, trong khi Lớp Liên kết Dữ liệu đảm bảo việc truyền tải đáng tin
+          cậy trong một phân đoạn mạng duy nhất.
+        </p>
+        <p>
+          Ở lớp này, dữ liệu được tổ chức thành các khung, là Đơn vị Dữ liệu
+          Giao thức (PDU) của Lớp Liên kết Dữ liệu. Các khung này đóng gói các
+          gói dữ liệu từ Lớp Mạng và thêm các tiêu đề và phần cuối cần thiết để
+          truyền tải cục bộ.
+        </p>
+        <p>
+          Lớp này hoạt động bằng cách sử dụng địa chỉ MAC, là các địa chỉ phần
+          cứng duy nhất được gán cho các card giao diện mạng. Các địa chỉ 48 bit
+          này cung cấp sơ đồ định địa chỉ vật lý cho phép các thiết bị giao tiếp
+          trên cùng một phân đoạn mạng.
+        </p>
+        <p>
+          Lớp liên kết dữ liệu được chia thành hai lớp con. Lớp con Điều khiển
+          liên kết logic (LLC), được định nghĩa bởi chuẩn IEEE 802.2, xử lý việc
+          kiểm soát lỗi và kiểm soát luồng giữa các thiết bị. Lớp con Điều khiển
+          truy cập phương tiện (MAC), bao gồm các chuẩn như IEEE 802.3 cho
+          Ethernet và IEEE 802.11 cho Wi-Fi, quản lý cách các thiết bị truy cập
+          vào môi trường vật lý được chia sẻ.
+        </p>
+        <h3>Cách thức hoạt động</h3>
+        <p>
+          Lớp liên kết dữ liệu hoạt động thông qua một số cơ chế chính nhằm đảm
+          bảo sự liên lạc đáng tin cậy giữa các thiết bị được kết nối trực tiếp.
+        </p>
+        <h4>Khung</h4>
+        <p>
+          Quá trình đóng khung chuyển đổi dữ liệu thô thành các đơn vị riêng
+          biệt, dễ quản lý gọi là khung. Lớp liên kết dữ liệu nhận các gói dữ
+          liệu từ lớp mạng và đóng gói chúng cùng với thông tin bổ sung cần
+          thiết cho việc truyền tải cục bộ.
+        </p>
+        <p>
+          Mỗi khung dữ liệu bao gồm phần tiêu đề chứa địa chỉ MAC nguồn và đích,
+          thông tin loại khung và các trường điều khiển. Phần dữ liệu mang dữ
+          liệu thực tế từ các lớp cao hơn. Phần cuối khung chứa chuỗi kiểm tra
+          khung (FCS), cho phép phát hiện lỗi.
+        </p>
+        <p>
+          Các ký tự phân định bắt đầu và kết thúc đánh dấu ranh giới khung bằng
+          cách sử dụng các mẫu bit cụ thể. Các ký tự phân định này giúp thiết bị
+          nhận xác định vị trí bắt đầu và kết thúc của mỗi khung trong luồng bit
+          liên tục.
+        </p>
+        <h4>Địa chỉ vật lý (Địa chỉ MAC)</h4>
+        <p>
+          Địa chỉ MAC cung cấp mã nhận dạng duy nhất cho các giao diện mạng ở
+          lớp liên kết dữ liệu. Các địa chỉ 48 bit này được ghi cố định vào các
+          card giao diện mạng trong quá trình sản xuất và không thay đổi bất kể
+          vị trí mạng.
+        </p>
+        <p>
+          Khi gửi dữ liệu, các thiết bị sử dụng địa chỉ MAC để xác định người
+          nhận dự định trên phân đoạn mạng cục bộ. Địa chỉ MAC nguồn xác định
+          người gửi, trong khi địa chỉ MAC đích xác định thiết bị mục tiêu.
+        </p>
+        <p>
+          Giao thức phân giải địa chỉ (ARP) đóng vai trò cầu nối giữa địa chỉ IP
+          ở lớp mạng và địa chỉ MAC ở lớp liên kết dữ liệu. Khi một thiết bị cần
+          gửi dữ liệu đến một địa chỉ IP trên cùng mạng, ARP sẽ phân giải địa
+          chỉ IP đó thành địa chỉ MAC tương ứng.
+        </p>
+        <h4>Media Access Control</h4>
+        <p>
+          Nhiều thiết bị cùng chia sẻ một môi trường vật lý cần sự phối hợp để
+          tránh nhiễu. Lớp con MAC quản lý quyền truy cập chung này thông qua
+          nhiều giao thức khác nhau.
+        </p>
+        <p>
+          Giao thức truy cập đa điểm cảm biến sóng mang với phát hiện xung đột
+          (CSMA/CD) điều chỉnh mạng Ethernet. Các thiết bị lắng nghe trạng thái
+          của đường truyền trước khi truyền dữ liệu. Nếu đường truyền bận, chúng
+          sẽ chờ. Nếu hai thiết bị truyền dữ liệu đồng thời và tạo ra xung đột,
+          cả hai sẽ phát hiện ra điều đó và truyền lại sau một khoảng thời gian
+          trễ ngẫu nhiên.
+        </p>
+        <p>
+          Giao thức truy cập đa người dùng cảm biến sóng mang với tránh va chạm
+          (CSMA/CA) quản lý các mạng không dây trong trường hợp phát hiện va
+          chạm không khả thi. Các thiết bị sử dụng các kỹ thuật như khoảng thời
+          gian chờ ngẫu nhiên và các bước bắt tay yêu cầu gửi/xác nhận gửi để
+          giảm thiểu va chạm trước khi chúng xảy ra.
+        </p>
+        <h4>Phát hiện và sửa lỗi</h4>
+        <p>
+          Chuỗi kiểm tra khung (FCS) cung cấp khả năng phát hiện lỗi bằng cách
+          sử dụng kiểm tra dư tuần hoàn (CRC). Bên gửi tính toán tổng kiểm tra
+          dựa trên nội dung khung và đưa nó vào phần cuối của khung. Bên nhận
+          tính toán lại tổng kiểm tra và so sánh nó với FCS đã nhận được.
+        </p>
+        <p>
+          Nếu mã kiểm tra khớp nhau, khung dữ liệu có thể đã được gửi đến mà
+          không có lỗi. Nếu chúng khác nhau, bên nhận sẽ loại bỏ khung dữ liệu
+          bị lỗi. Các lớp cao hơn thường xử lý việc truyền lại dữ liệu bị mất
+          hoặc bị lỗi.
+        </p>
+        <h4>Follow control</h4>
+        <p>
+          Cơ chế điều khiển luồng ngăn chặn các bên gửi nhanh làm quá tải các
+          bên nhận chậm hơn trên các liên kết trực tiếp. Lớp liên kết dữ liệu có
+          thể triển khai các giao thức cửa sổ trượt cho phép nhiều khung dữ liệu
+          được truyền tải đồng thời mà vẫn duy trì trình tự và xác nhận chính
+          xác.
+        </p>
+        <h4>Điều khiển liên kết logic (LLC)</h4>
+        <p>
+          Lớp con LLC cung cấp giao diện giữa các giao thức của Lớp Liên kết Dữ
+          liệu và Lớp Mạng. Các Điểm Truy cập Dịch vụ (SAP) cho phép nhiều giao
+          thức lớp cao hơn chia sẻ cùng một giao diện vật lý.
+        </p>
+        <p>
+          LLC có thể thực hiện các chức năng kiểm soát lỗi và kiểm soát luồng bổ
+          sung vượt xa những gì lớp con MAC cung cấp. Điều này tạo ra một kênh
+          liên lạc mạnh mẽ hơn giữa các thiết bị được kết nối trực tiếp.
+        </p>
+        <h3>Các tính năng và thành phần chính</h3>
+        <p>
+          Lớp liên kết dữ liệu cung cấp một số tính năng thiết yếu cho phép giao
+          tiếp mạng cục bộ đáng tin cậy. <br />
+          Độ tin cậy giữa các nút đảm bảo tính toàn vẹn dữ liệu giữa các thiết
+          bị được kết nối trực tiếp. Lớp này phát hiện lỗi truyền dẫn và có thể
+          yêu cầu truyền lại khi cần thiết. <br />
+          Việc gán địa chỉ vật lý thông qua địa chỉ MAC cung cấp định danh duy
+          nhất cho các thiết bị trên cùng một phân đoạn mạng. Sơ đồ gán địa chỉ
+          này hoạt động độc lập với các lớp gán địa chỉ cao hơn như địa chỉ IP.
+          <br />
+          Kiểm soát truy cập phương tiện (MAC) quản lý cách nhiều thiết bị chia
+          sẻ một kênh truyền thông vật lý duy nhất. Điều này ngăn ngừa xung đột
+          và đảm bảo quyền truy cập công bằng vào tài nguyên mạng. <br />
+          Việc phân khung dữ liệu giúp tổ chức dữ liệu thành các đơn vị riêng
+          biệt với ranh giới rõ ràng và thông tin kiểm soát. Cấu trúc này cho
+          phép xử lý dữ liệu có độ dài thay đổi một cách hiệu quả. <br />
+          Cơ chế phát hiện lỗi xác minh rằng các khung dữ liệu được truyền đến
+          mà không bị lỗi. Cơ chế FCS phát hiện hầu hết các lỗi truyền dẫn trước
+          khi chúng ảnh hưởng đến các lớp cao hơn. <br />
+          Cơ chế điều khiển luồng quản lý tốc độ truyền dữ liệu giữa các thiết
+          bị có khả năng xử lý khác nhau. Điều này ngăn ngừa tràn bộ đệm và đảm
+          bảo quá trình truyền thông diễn ra suôn sẻ. <br />
+          Lớp này xác định ranh giới vùng xung đột, quyết định cách các phân
+          đoạn mạng xử lý các đường truyền đồng thời và các xung đột tiềm tàng.
+          <br />
+        </p>
+        <h3>Các công nghệ và thiết bị phổ biến ở lớp liên kết dữ liệu</h3>
+        <p>
+          Nhiều giao thức hoạt động ở lớp liên kết dữ liệu để cho phép các loại
+          giao tiếp mạng khác nhau.
+        </p>
+        <p>
+          Ethernet (IEEE 802.3) chiếm ưu thế trong các mạng cục bộ có dây. Nó
+          định nghĩa cả các đặc tính của Lớp Vật lý và các giao thức của Lớp
+          Liên kết Dữ liệu để đảm bảo liên lạc đáng tin cậy qua cáp đồng và cáp
+          quang.
+        </p>
+        <p>
+          Wi-Fi (IEEE 802.11) cung cấp kết nối mạng LAN không dây bằng cách sử
+          dụng tần số vô tuyến. Giao thức này xử lý các vấn đề phức tạp của
+          truyền thông không dây, bao gồm quản lý nhiễu và hỗ trợ tính di động.
+        </p>
+        <p>
+          Giao thức điểm-đến-điểm (PPP) cho phép kết nối nối tiếp trực tiếp giữa
+          hai thiết bị. Nó thường được sử dụng cho các liên kết WAN và kết nối
+          quay số.
+        </p>
+        <p>
+          Giao thức phân giải địa chỉ (ARP) ánh xạ địa chỉ IP ở lớp mạng sang
+          địa chỉ MAC ở lớp liên kết dữ liệu. Việc ánh xạ này rất cần thiết cho
+          việc truyền tải các gói IP cục bộ.
+        </p>
+        <p>
+          Các giao thức lớp con Điều khiển truy cập phương tiện (MAC) và Điều
+          khiển liên kết logic (LLC) hoạt động cùng nhau để cung cấp đầy đủ chức
+          năng của Lớp liên kết dữ liệu.
+        </p>
+        <p>
+          Các thiết bị mạng hoạt động ở Lớp 2 bao gồm các Card Giao diện Mạng
+          (NIC), kết nối máy tính với mạng vật lý và xử lý địa chỉ MAC và đóng
+          gói khung dữ liệu. Các Switch chuyển tiếp khung dữ liệu một cách thông
+          minh dựa trên địa chỉ MAC và phân đoạn các miền xung đột. Các Bridge
+          kết nối các phân đoạn mạng và lọc lưu lượng truy cập dựa trên địa chỉ
+          MAC. Các Điểm Truy cập Không dây (WAP) kết nối các máy khách không dây
+          với mạng có dây.
+        </p>
+        <h3>Các trường hợp sử dụng và ứng dụng</h3>
+        <p>
+          Lớp liên kết dữ liệu đóng vai trò nền tảng cho nhiều tình huống mạng
+          mà các chuyên gia CNTT gặp phải hàng ngày.
+        </p>
+        <p>
+          Mạng cục bộ (LAN) phụ thuộc rất nhiều vào các giao thức lớp 2 để liên
+          lạc trong các tòa nhà hoặc khuôn viên trường. Các bộ chuyển mạch
+          Ethernet tạo nên xương sống của hầu hết các mạng doanh nghiệp bằng
+          cách chuyển tiếp các khung dữ liệu dựa trên địa chỉ MAC.
+        </p>
+        <p>
+          Các liên kết Mạng diện rộng (WAN) sử dụng các giao thức như PPP để
+          thiết lập các kết nối đáng tin cậy giữa các địa điểm xa nhau. Các kết
+          nối điểm-điểm này yêu cầu các giao thức Lớp liên kết dữ liệu để đảm
+          bảo truyền dữ liệu đáng tin cậy trên các mạch đường dài.
+        </p>
+        <p>
+          Mạng không dây dựa trên các tiêu chuẩn IEEE 802.11 để quản lý việc
+          truyền thông tần số vô tuyến. Lớp liên kết dữ liệu xử lý các thách
+          thức như nhiễu sóng, biến đổi cường độ tín hiệu và tính di động của
+          thiết bị.
+        </p>
+        <p>
+          Môi trường ảo hóa sử dụng các bộ chuyển mạch ảo và card mạng ảo hoạt
+          động ở lớp liên kết dữ liệu. Các thành phần ảo này cung cấp chức năng
+          tương tự như phần cứng vật lý đồng thời cho phép cấu hình mạng linh
+          hoạt.
+        </p>
+        <p>
+          Các giải pháp bảo mật mạng thường hoạt động ở Lớp 2, bao gồm lọc địa
+          chỉ MAC trên các thiết bị chuyển mạch và điểm truy cập không dây, các
+          tính năng bảo mật cổng giới hạn quyền truy cập của thiết bị dựa trên
+          địa chỉ MAC và phân đoạn VLAN tạo ra các ranh giới mạng logic.
+        </p>
+        <h3>Ưu điểm và nhược điểm</h3>
+        <p>
+          Lớp liên kết dữ liệu cung cấp một số ưu điểm quan trọng giúp cho việc
+          truyền thông mạng cục bộ trở nên đáng tin cậy và hiệu quả.
+        </p>
+        <p>
+          Việc truyền dữ liệu đáng tin cậy giữa các thiết bị được kết nối trực
+          tiếp đảm bảo tính toàn vẹn dữ liệu thông qua cơ chế phát hiện lỗi và
+          kiểm soát luồng. Độ tin cậy này tạo nền tảng cho các giao thức lớp cao
+          hơn.
+        </p>
+        <p>
+          Quản lý truy cập phương tiện hiệu quả cho phép nhiều thiết bị chia sẻ
+          tài nguyên mạng vật lý mà không xảy ra xung đột liên tục. Các giao
+          thức như CSMA/CD và CSMA/CA giảm thiểu va chạm và đảm bảo truy cập
+          công bằng.
+        </p>
+        <p>
+          Phát hiện lỗi sớm giúp phát hiện các sự cố truyền dẫn trước khi chúng
+          lan rộng đến các lớp cao hơn. Trình tự kiểm tra khung (Frame Check
+          Sequence) nhanh chóng xác định các khung bị hỏng, cho phép khôi phục
+          kịp thời.
+        </p>
+        <p>
+          Các giao thức quản lý xung đột giúp giảm thiểu tác động của việc
+          truyền tải đồng thời lên các phương tiện lưu trữ dùng chung. Các cơ
+          chế này duy trì hiệu suất mạng ngay cả khi có thêm nhiều thiết bị tham
+          gia mạng.
+        </p>
+        <p>
+          Việc định địa chỉ logic thông qua địa chỉ MAC cung cấp khả năng nhận
+          dạng duy nhất hoạt động độc lập với các sơ đồ định địa chỉ lớp cao
+          hơn. Sự tách biệt này giúp đơn giản hóa thiết kế mạng.
+        </p>
+        <p>
+          Tuy nhiên, lớp liên kết dữ liệu cũng có những hạn chế quan trọng ảnh
+          hưởng đến các quyết định thiết kế mạng.
+        </p>
+        <p>
+          Lớp này không thể định tuyến lưu lượng truy cập giữa các mạng khác
+          nhau. Nó chỉ xử lý việc liên lạc giữa các thiết bị được kết nối trực
+          tiếp, yêu cầu các giao thức của Lớp Mạng để liên lạc giữa các mạng.
+        </p>
+        <p>
+          Các mạng Layer 2 quy mô lớn có thể gặp phải những hạn chế về miền phát
+          sóng. Lưu lượng phát sóng đến tất cả các thiết bị trong cùng một miền
+          Layer 2, điều này có thể gây ra các vấn đề về hiệu suất trong các mạng
+          lớn.
+        </p>
+        <p>
+          Các thách thức về khả năng mở rộng xuất hiện trong các mạng LAN lớn
+          khi bảng địa chỉ MAC trở nên cồng kềnh và miền quảng bá phát triển quá
+          lớn. Những hạn chế này thường chi phối các quyết định phân đoạn mạng.
+        </p>
+        <p>
+          Các vấn đề về bảo mật bao gồm lỗ hổng dễ bị tấn công giả mạo địa chỉ
+          MAC, trong đó các thiết bị độc hại mạo danh các thiết bị hợp pháp; tấn
+          công làm sai lệch bảng phân giải địa chỉ ARP; và các cuộc tấn công
+          nhảy VLAN vượt qua ranh giới mạng logic.
+        </p>
+      </div>
+      <br />
+      <hr />
+    </main>
+    <footer>
+      <div class="footer-container">
+        <div class="box box1">
+          <div class="box-header">VTS</div>
+          <div class="box-content">
+            <div class="lienhe">
+              <a href="../../index.html">Bài viết</a>
+            </div>
+            <div class="lienhe">
+              <a href="../../lien-he.html">Liên hệ</a>
+            </div>
+          </div>
+          <div class="box-footer-inner">Chân cột nhỏ.</div>
+        </div>
+        <div class="box box2">
+          <div class="box-header">Liên hệ</div>
+          <div class="box-content">
+            <address class="lienhe">✉ Email: dhdang.nb@gmail.com</address>
+            <address class="lienhe">
+              <a href="tel:0961314699">☏ Điện thoại: 0961314699</a>
+            </address>
+            <address class="lienhe">
+              <a target="_blank" href="https://zalo.me/0961314699"
+                >Zalo: 0961314699</a
+              >
+            </address>
+          </div>
+          <div class="box-footer-inner">Chân cột nhỏ.</div>
+        </div>
+        <div class="box box3">
+          <div class="box-header">Videos</div>
+          <div class="box-content">
+            <div class="lienhe">
+              <a
+                target="_blank"
+                href="https://www.youtube.com/@H%E1%BA%A3i%C4%90%C4%83ng%C4%90%E1%BB%97-l2w"
+                >Youtube.com</a
+              >
+            </div>
+          </div>
+          <div class="box-footer-inner">Chân cột nhỏ.</div>
+        </div>
+        <div class="box box4">
+          <div class="box-header">Mở rộng</div>
+          <div class="box-content">
+            <span id="morong"
+              >Nếu bạn có nhu cầu lắp đặt internet tốc độ cao, hãy tham khảo nhà
+              mạng <a href="../../viettel.html">Viettel</a> bạn nhé!</span
+            >
+          </div>
+          <div class="box-footer-inner">Chân cột nhỏ.</div>
+        </div>
+      </div>
+      <div class="copy">
+        <small>Copyright ©2025 by dhdang.nb@gmail.com 096-1314-699</small>
+      </div>
+    </footer>
+    <script src="../../main.js"></script>
+  </body>
+</html>
