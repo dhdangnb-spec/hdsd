@@ -25,6 +25,7 @@ html {
 
 .nav-logo img {
   height: 4rem;
+  width: auto;
   pointer-events: none;
 }
 /* Kiểu cho các liên kết desktop (mặc định là hàng ngang) */
